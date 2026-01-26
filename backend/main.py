@@ -12,8 +12,9 @@ app = FastAPI()
 
 # CORS Configuration - Allow requests from your React Frontend
 origins = [
-    "http://localhost",
-    "http://localhost:3000",
+    # "http://localhost",
+    # "http://localhost:3000",
+    "*"
 ]
 app.add_middleware(
     CORSMiddleware,
