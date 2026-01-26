@@ -37,7 +37,7 @@ function App() {
     formData.append("file", selectedFile);
 
     try {
-      const res = await axios.post("https://pneumonia-detection-system-p3no.onrender.com", formData, {
+      const res = await axios.post("https://pneumonia-detection-system-p3no.onrender.com/predict", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       
